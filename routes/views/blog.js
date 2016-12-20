@@ -12,7 +12,7 @@ exports = module.exports = function (req, res) {
 		category: req.params.category,
 	};
 	locals.data = {
-		posts: [],
+		posts: [{ }],
 		categories: [],
 	};
 
@@ -74,6 +74,7 @@ exports = module.exports = function (req, res) {
 
 		q.exec(function (err, results) {
 			locals.data.posts = results;
+			console.log(locals.data);
 			next(err);
 		});
 	});

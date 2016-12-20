@@ -10,7 +10,6 @@
 exports.create = {
 	User: [
 		{ 'name.first': 'Admin', 'name.last': 'User', 'email': 'david.rose@headstartapp.com', 'password': 'Ravens93', 'isAdmin': true },
-		{ 'name.first': 'David', 'name.last': 'Rose', 'email': 'davidjrose3@gmail.com', 'password': 'banana', 'isAdmin': true },
 	],
 };
 

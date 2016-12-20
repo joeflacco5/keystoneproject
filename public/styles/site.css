@@ -5834,3 +5834,14 @@ button.close {
   display: block;
   max-width: 100%;
   height: auto; }
+
+.container {
+  font-family: Roboto;
+  text-align: center; }
+  .container .jumbotron {
+    border: solid black 3px; }
+
+.images {
+  display: flex; }
+  .images img {
+    flex: 0 0 50%; }
