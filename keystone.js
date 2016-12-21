@@ -5,6 +5,7 @@ require('dotenv').config();
 // Require keystone
 var keystone = require('keystone');
 var handlebars = require('express-handlebars');
+// adding a comment to test change.
 
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
