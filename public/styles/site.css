@@ -5836,12 +5836,9 @@ button.close {
   height: auto; }
 
 .container {
-  font-family: Roboto;
-  text-align: center; }
+  font-family: Roboto; }
   .container .jumbotron {
     border: solid black 3px; }
 
-.images {
-  display: flex; }
-  .images img {
-    flex: 0 0 50%; }
+img {
+  display: center; }

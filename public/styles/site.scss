@@ -23,15 +23,11 @@
 
 .container{
   font-family: Roboto;
-    text-align: center;
     .jumbotron{
       border: solid black 3px;
+      }
     }
-}
-
-.images{
+img{
   display: flex;
-  img{
-    flex: 0 0 50%;
-  }
+  flex: 1;
 }
