@@ -10,7 +10,6 @@ var handlebars = require('express-handlebars');
 // Initialise Keystone with your project's configuration.
 // See http://keystonejs.com/guide/config for available options
 // and documentation.
-var mongodb = require('mongodb');
 
 keystone.init({
 	'name': 'website',

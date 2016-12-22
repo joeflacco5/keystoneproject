@@ -2,8 +2,8 @@
 <div class="container">
 	<div class="jumbotron">
 		<div class="images">
-		<img src="/images/keystone.jpg" style="max-width: 60%; max-height: 300px;">
-		<img src="/images/keystone1.jpg" style="max-width: 60%; max-height: 300px;">
+		<img src="/images/keystone.jpg" style="max-width: 50%; max-height: 300px;">
+		<img src="/images/keystone1.jpg" style="max-width: 50%; max-height: 300px;">
 	</div>
 		<h1>Welcome to my website!!!!</h1>
 		<p>This is your chance to gain some insight into my life!</p>
@@ -12,6 +12,12 @@
 			but also my <a href="http://www.weeb.tv/"><strong>chatshow website</strong></a>!
 		</p>
 		<hr>
+
+		{{# each weebs}}
+		<h1>name: {{name}}</h1>
+		<h2>hair: {{hairColor}}</h2>
+		<h2>anime: {{anime}}</h2>
+		{{/each }}
 		<p>Feel free to leave a comment in the blog section. This can be found <a href="http://localhost:3000/blog">here</a>.</p>
 		<hr>
 		<p>
