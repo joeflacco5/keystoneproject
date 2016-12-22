@@ -5841,4 +5841,5 @@ button.close {
     border: solid black 3px; }
 
 img {
-  display: center; }
+  display: flex;
+  flex: 1; }
