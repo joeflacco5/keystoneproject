@@ -86,6 +86,11 @@ keystone.set('nav', {
 	users: 'users',
 });
 
+// Configuring Cloudinary
+keystone.set('cloudinary config', { cloud_name: 'headstart-app', api_key: '861975331137881', api_secret: 'NGmlAMZPTaMdBEASr9m0oCNvdeI' });
+keystone.set('cloudinary folders', true);
+keystone.set('cloudinary secure', true);
+
 // Start Keystone to connect to your database and initialise the web server
 
 keystone.start();

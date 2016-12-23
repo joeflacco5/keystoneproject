@@ -13,7 +13,7 @@ exports = module.exports = function (req, res) {
 
 	// Load all teams.
 	view.on('init', function (next) {
-    var q = keystone.list('Team').model.find().populate('players');
+    var q = keystone.list('Team').model.find();
 
 		q.exec(function (err, results) {
 			locals.data.teams = results;

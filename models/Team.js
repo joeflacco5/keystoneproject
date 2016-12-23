@@ -15,6 +15,7 @@ Team.add({
 	name: { type: String, required: true, initial: true },
 	url: { type: String, required: true, index: true, initial: true },
 	players: { type: Types.Relationship, ref: 'Player', many: true },
+	image: { type: Types.CloudinaryImage },
 });
 
 
