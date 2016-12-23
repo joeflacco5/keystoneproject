@@ -15,10 +15,19 @@ exports = module.exports = function (req, res) {
 	view.on('init', function (next) {
     var q = keystone.list('Team').model.find().populate('players');
 
+		q.exec(function (err, results) {
+			locals.data.teams = results;
+			next(err)
+		});
+	})
+	// Render the view
+	view.render('team');
+};
+
+
+/* model.find().populate('players')
+
     q.exec(function (err, results) {
       locals.data.teams = results;
       next(err)
-    })
-  });
-	view.render('team');
-};
+    }) */
