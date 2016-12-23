@@ -14,7 +14,7 @@ exports = module.exports = function (req, res) {
 // Load all divisions
   view.on('init', function( next ) {
     var q = keystone.list('Division').model.find().populate('teams');
-  q.exec(function(err, results) {
+  q.exec(function (err, results) {
     locals.data.divisions = results;
     next(err)
   })

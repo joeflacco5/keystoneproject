@@ -7,18 +7,21 @@ exports = module.exports = function (req, res) {
 
   // Set locals
 
-  locals.section = 'positions';
+  locals.section = 'Positions';
   locals.data = {
     positions: []
 };
 
  // Load all positions
- view.on('init', function( next ) {
+  view.on('init', function (next) {
+
    var q = keystone.list('Position').model.find().populate('players');
-   q.exec(function( err, results ) {
+
+   q.exec(function (err, results) {
      locals.data.positions = results;
      next(err)
    })
+
  });
-  // view.render('positions?')
+  view.render('positions');
 }

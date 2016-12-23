@@ -3,15 +3,15 @@ var Types = keystone.Field.Types;
 
 // Position Model
 
-var Position = new keystone.List('Position', {
-  map: {name: 'name'},
-  autokey: { path: 'slug', from: 'name', unique: true }
+var Positions = new keystone.List('Positions', {
+  map: { name: 'name' },
+  autokey: { path: 'slug', from: 'name', unique: true },
 });
 
-Position.add({
-  name: { type: String, required: true, initial: true },
-  players: { type: Types.Relationship, required: true, initial: true },
+Positions.add({
+  position: { type: String, required: true, initial: true },
+  players: { type: Types.Relationship, ref: 'Player', many: true },
 });
 
-Position.defaultColumns = 'name, players';
-Position.register();
+Positions.defaultColumns = 'name, players';
+Positions.register();
