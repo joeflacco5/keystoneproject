@@ -4,8 +4,8 @@ var Types = keystone.Field.Types;
 // Position Model
 
 var Positions = new keystone.List('Positions', {
-  map: { name: 'name' },
-  autokey: { path: 'slug', from: 'name', unique: true },
+  map: { name: 'position' },
+  autokey: { path: 'slug', from: 'position', unique: true },
 });
 
 Positions.add({

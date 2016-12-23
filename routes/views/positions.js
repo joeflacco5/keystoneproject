@@ -23,5 +23,5 @@ exports = module.exports = function (req, res) {
    })
 
  });
-  view.render('positions');
+  view.render('team');
 }
