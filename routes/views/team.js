@@ -14,6 +14,11 @@ exports = module.exports = function (req, res) {
 	// Load all teams.
 	view.on('init', function (next) {
     var q = keystone.list('Team').model.find();
+		/*	var q = keystone.list('Team').paginate({
+				page: req.query.page || 1,
+				perPage: 16,
+				maxPages: 2,
+			}); */
 
 		q.exec(function (err, results) {
 			locals.data.teams = results;
