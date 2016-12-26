@@ -11,6 +11,11 @@
       </div>
       <div class="panel-footer">
         <a href="{{url}}" target="_blank" class="btn btn-primary">Team Website</a>
+        {{#if division}}
+        <a href="http://localhost:3000/depth" target="_blank" class="btn btn-primary">
+          Depth Chart
+        </a>
+        {{/if}}
       </div>
     </div>
     {{/each}}

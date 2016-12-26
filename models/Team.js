@@ -16,8 +16,9 @@ Team.add({
 	url: { type: String, required: true, index: true, initial: true },
 	players: { type: Types.Relationship, ref: 'Player', many: true },
 	image: { type: Types.CloudinaryImage, publicId: 'slug' },
+	division: { type: Types.Relationship, ref: 'Division', many: true },
 });
 
 
-Team.defaultColumns = 'name, players, url';
+Team.defaultColumns = 'name, players, url, division ';
 Team.register();
