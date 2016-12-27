@@ -5838,7 +5838,9 @@ button.close {
 .container {
   font-family: Roboto; }
   .container .jumbotron {
-    border: solid black 3px; }
+    background-image: url("http://humanfitproject.com/wp-content/uploads/2015/09/football-field-1140x491.png");
+    background-size: cover;
+    background-position: center center; }
 
 .images {
   display: flex;
@@ -5847,18 +5849,41 @@ button.close {
   margin: 0 auto; }
 
 .text {
-  margin: 5%;
-  padding: 5px; }
+  display: flex;
+  flex-direction: row; }
+  .text .text1 {
+    flex: 3; }
+  .text .text2 {
+    flex: 1; }
+
+.text2 {
+  display: flex;
+  flex-direction: column; }
+  .text2 p {
+    flex: 4;
+    justify-content: flex-end; }
+  .text2 .homepage {
+    flex: 1; }
+    .text2 .homepage a {
+      text-decoration: none;
+      color: black; }
+    .text2 .homepage button {
+      float: right; }
 
 .image-row {
   margin: 5px;
   padding-top: 30px;
-  display: flex;
-  justify-content: space-between; }
+  display: flex; }
   .image-row h3 {
     font-family: Roboto;
     padding-top: 75px;
-    padding-right: 20px; }
+    padding-right: 20px;
+    justify-content: space-between; }
   .image-row img {
-    border: 1px silver;
     flex: 1; }
+
+.contact-image {
+  background-image: url("/images/contact.png");
+  background-size: cover;
+  background-position: center;
+  background-blend-mode: difference; }

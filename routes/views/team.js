@@ -9,16 +9,16 @@ exports = module.exports = function (req, res) {
 	locals.section = 'nfl'; // to set currently selected item in the header nav.
 	locals.data = {
     teams: [],
-  };
+	};
 
 	// Load all teams.
 	view.on('init', function (next) {
-    var q = keystone.list('Team').model.find();
-		/*	var q = keystone.list('Team').paginate({
+    // var q = keystone.list('Team').model.find();
+			var q = keystone.list('Team').paginate({
 				page: req.query.page || 1,
-				perPage: 16,
-				maxPages: 2,
-			}); */
+				perPage: 32,
+				maxPages: 4,
+			});
 
 		q.exec(function (err, results) {
 			locals.data.teams = results;

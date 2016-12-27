@@ -24,7 +24,7 @@ exports.initLocals = function (req, res, next) {
 		{ label: 'NFL Teams', key: 'nfl', href: '/nfl' },
 		{ label: 'NFL Divisions', key: 'divisions', href: '/divisions' },
 		{ label: 'Ravens Depth Chart', key: 'depth', href: '/depth' },
-		{ label: 'Logos', key: 'logos', href: 'logos' },
+		{ label: 'Logos', key: 'logos', href: '/logos' },
 		{ label: 'Contact', key: 'contact', href: '/contact' },
 	];
 	res.locals.user = req.user;

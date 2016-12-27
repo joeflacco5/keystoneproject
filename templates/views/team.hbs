@@ -1,24 +1,25 @@
 <div class='container'>
-<div class="row">
-  <div class="col-xs-12">
-    {{# each data.teams}}
-    <div class="panel panel-default">
-      <div class="panel-heading">
-        <div class="panel-title">{{name}}</div>
+  <div class="row">
+    <div class="col-xs-12">
+      {{#each data.teams.results}}
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <div class="panel-title">{{name}}</div>
+        </div>
+        <div class="panel-body">
+          <img src="{{ cloudinaryUrl image crop='fill'}}"/>
+        </div>
+        <div class="panel-footer">
+          <a href="{{url}}" target="_blank" class="btn btn-primary">Team Website</a>
+          {{#if division}}
+          <a href="/depth" target="_blank" class="btn btn-primary">
+            Depth Chart
+          </a>
+          {{/if}}
+        </div>
       </div>
-      <div class="panel-body">
-        <img src="{{ cloudinaryUrl image crop='fill'}}"/>
-      </div>
-      <div class="panel-footer">
-        <a href="{{url}}" target="_blank" class="btn btn-primary">Team Website</a>
-        {{#if division}}
-        <a href="http://localhost:3000/depth" target="_blank" class="btn btn-primary">
-          Depth Chart
-        </a>
-        {{/if}}
-      </div>
+      {{/each}}
     </div>
-    {{/each}}
   </div>
-</div>
+  {{>pagination}}
 </div>
