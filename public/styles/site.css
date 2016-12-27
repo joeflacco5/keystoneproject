@@ -5840,6 +5840,25 @@ button.close {
   .container .jumbotron {
     border: solid black 3px; }
 
-img {
+.images {
   display: flex;
-  flex: 1; }
+  flex-direction: row;
+  justify-content: space-around;
+  margin: 0 auto; }
+
+.text {
+  margin: 5%;
+  padding: 5px; }
+
+.image-row {
+  margin: 5px;
+  padding-top: 30px;
+  display: flex;
+  justify-content: space-between; }
+  .image-row h3 {
+    font-family: Roboto;
+    padding-top: 75px;
+    padding-right: 20px; }
+  .image-row img {
+    border: 1px silver;
+    flex: 1; }
